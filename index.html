@@ -78,12 +78,13 @@
             </div>
         </main>
         <section class="container">
+          <h1 class="text-center mt-5"> Conceptual Question answer </h1>
             <article>
                 <div class="accordion accordion-flush" id="accordionFlushExample">
                     <div class="accordion-item">
                       <h2 class="accordion-header" id="flush-headingOne">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                          How does javascript work?
+                          <h3>How does javascript work?</h3>                          
                         </button>
                       </h2>
                       <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
@@ -96,17 +97,20 @@
                     <div class="accordion-item">
                       <h2 class="accordion-header" id="flush-headingTwo">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                          What is Javascript Event Loop?
+                          <h3>What is Javascript Event Loop?</h3>                          
                         </button>
                       </h2>
                       <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                        <div class="accordion-body">In a browser, javascript code is parsed and executed by its' engine. The engine consists of two parts, a memory heap, and a call stack. In memory-heap, all objects allocate an unstructured way. As a single-threaded non-blocking language, code executes in the browser synchronously. Browser process data according to inside the call stack one after another from its memory heap. <br> 
+                          Web APIs such as DOM, AJAX (XML HTTP request), timeout do not exist in a browser. As a result, when the browser tries to read the web API's properties with its other properties, it blocks the data processing way until it processes its previous data. <br>
+                          The Event loop appeared in javascript to solve this problem. The event loop helps the browser to work asynchronously. In the call stack, single data can be processed, and the rest data remain in the callback queue. Data send to the call stack from the callback queue through the event loop. After completing each execution context event loop activated, take data from the callback queue and send it to the call stack. This activity continues till all data end up from the callback queue. <br>
+                          All web API data processes happen when other data are completed.</div>
                       </div>
                     </div>
                     <div class="accordion-item">
                       <h2 class="accordion-header" id="flush-headingThree">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                          Local Storage vs Session Storage.
+                          <h3>Local Storage vs Session Storage.</h3>
                         </button>
                       </h2>
                       <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
